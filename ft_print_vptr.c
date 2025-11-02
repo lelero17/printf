@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 20:02:54 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 14:58:52 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/02 16:14:09 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_print_vptr(void *ptr)
 	count = 0;
 	n = (unsigned long) ptr;
 	if (n == 0)
-		return (write(1, "0x0", 3));
+		return (write(1, "(nil)", 5));
 	while (n > 0)
 	{
 		if (n % 16 >= 10)
