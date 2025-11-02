@@ -6,11 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 19:42:46 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 11:59:42 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/02 14:59:18 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_conv(char conv, va_list ap)
 {

@@ -6,11 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 19:50:49 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 12:29:07 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/02 14:59:02 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_print_nbr(int nbr)
 {

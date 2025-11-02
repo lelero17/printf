@@ -6,11 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 12:44:12 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 14:02:00 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/02 14:58:47 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_printf(const char *s, ...)
 {

@@ -6,11 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 20:02:54 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 12:32:06 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/02 14:58:52 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_print_vptr(void *ptr)
 {
