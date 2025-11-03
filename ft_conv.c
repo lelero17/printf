@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 19:42:46 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 14:59:18 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/03 19:07:49 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,9 @@ int	ft_conv(char conv, va_list ap)
 	else if (conv == '%')
 		count += write(1, "%", 1);
 	else
+	{
+		count += write(1, "%", 1);
 		count += write(1, &conv, 1);
+	}
 	return (count);
 }
