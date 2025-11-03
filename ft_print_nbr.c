@@ -6,34 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 19:50:49 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 14:59:02 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:19:18 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-int	ft_print_nbr(int nbr)
-{
-	int	count;
-
-	ft_putnbr_fd(nbr, 1);
-	count = 0;
-	if (nbr == 0)
-		return (1);
-	if (nbr == -2147483648)
-		return (11);
-	if (nbr < 0)
-	{
-		count++;
-		nbr = -nbr;
-	}
-	while (nbr != 0)
-	{
-		count++;
-		nbr /= 10;
-	}
-	return (count);
-}
 
 int	ft_print_unbr(unsigned int nbr)
 {
@@ -57,4 +34,23 @@ int	ft_print_unbr(unsigned int nbr)
 	while (i > 0)
 		write(1, &temp[--i], 1);
 	return (count);
+}
+
+int	ft_print_nbr(int nbr)
+{
+	int		flag;
+
+	flag = 0;
+	if (nbr == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return (11);
+	}
+	if (nbr < 0)
+	{
+		write(1, "-", 1);
+		nbr = -nbr;
+		flag = 1;
+	}
+	return (ft_print_unbr((unsigned int)nbr) + flag);
 }

@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 20:09:42 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/11/02 14:58:57 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/11/03 15:51:31 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int	ft_print_str(char *s)
 		write(1, &s[i], 1);
 		i++;
 	}
-	return (ft_strlen(s));
+	return (i);
 }
